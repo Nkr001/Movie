@@ -4,6 +4,28 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
+
+
+
+const firebase=require('firebase')
+require('firebase/firestore');
+
+var firebaseConfig = {
+  apiKey: "AIzaSyDOvbbafBJP49DcmanmVDNWdfJdpgY2JaI",
+  authDomain: "movies-50974.firebaseapp.com",
+  databaseURL: "https://movies-50974.firebaseio.com",
+  projectId: "movies-50974",
+  storageBucket: "movies-50974.appspot.com",
+  messagingSenderId: "821725198558",
+  appId: "1:821725198558:web:a23758da6eebf38a01ea4f"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
